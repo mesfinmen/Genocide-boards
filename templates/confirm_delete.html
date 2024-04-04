@@ -1,0 +1,15 @@
+{% extends 'base.html'}
+
+{% block content %}
+<div class="center">
+    <form method="post" class="card">
+        <h2>Delete Post</h2>
+        <p>Are you sure that you want to delete "{{post}}"?</p> 
+        <p class="form-buttons">
+                <input type="submit" class="btn btn-primary" value="Delete">
+                <a href="{% url 'posts %'}" class="btn btn-outline">Cancel</a>
+        </p>
+    </form>
+</div>
+
+{% endblock content %}
